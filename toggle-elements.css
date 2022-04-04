@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+body {
+  transition: background 0.2s linear;
+}
+.toggle {
+  position: absolute;
+  left: 85%;
+  top: 15px;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 21px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  height: 15px;
+  width: 15px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(29px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.main-container.dark {
+  background: #292c35;
+}
+#welcomeIdDark.dark-text {
+  color: white;
+}
+#usernameLabelDark.label-dark {
+  color: white;
+}
+#passwordLabelDark.label-dark {
+  color: white;
+}
+#usernameLogIn.input-white {
+  background-color: white;
+}
+#passwordLogIn.input-white {
+  background-color: white;
+}
