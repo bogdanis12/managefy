@@ -1,3 +1,3 @@
 setTimeout(() => {
-  window.location.assign("./home.html");
+  window.location.assign("./index.html");
 }, 3000);

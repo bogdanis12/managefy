@@ -90,7 +90,7 @@ if (userLoggedIn !== null) {
       writeInLS("addShifts", allShifts);
       writeInLS("userShifts", userShifts);
       clear();
-      document.location.assign("./home.html");
+      document.location.assign("./index.html");
     }
   });
 }

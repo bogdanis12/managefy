@@ -87,15 +87,15 @@ if (isUserLoggedIn) {
         writeInLS("users", users);
       });
       clear();
-      window.location.assign("./home.html");
+      window.location.assign("./index.html");
     }
   });
   cancelBtn.addEventListener("click", () => {
     clear();
-    window.location.assign("./home.html");
+    window.location.assign("./index.html");
   });
 }
 
 if (!isUserLoggedIn) {
-  window.location.assign("./home.html");
+  window.location.assign("./index.html");
 }

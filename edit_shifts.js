@@ -78,11 +78,11 @@ if (isUserLoggedIn) {
     getMyShifts[objIndex].workPlace = editWorkPlace.value;
     writeInLS("addShifts", getMyShifts);
     clear();
-    window.location.assign("./home.html");
+    window.location.assign("./index.html");
   });
 
   cancelBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./home.html");
+    window.location.assign("./index.html");
   });
 }

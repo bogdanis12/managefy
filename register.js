@@ -80,6 +80,6 @@ registerBtn.addEventListener("click", (e) => {
     userLogInTime.push(timeLogIn);
     writeInLS("userLogInTime", userLogInTime);
     writeInLS("loggedInUsers", loggedInUsers);
-    window.location.assign("./home.html");
+    window.location.assign("./index.html");
   }
 });
