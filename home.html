@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./home.js" defer></script>
+    <script src="./home.js" type="module" defer></script>
     <link rel="stylesheet" href="./home.css" />
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./footer.css" />
@@ -21,7 +21,7 @@
   <body>
     <div class="main-container">
       <div class="nav-container">
-        <div class="company-name"><p>Managefy</p></div>
+        <div class="company-name"><a href="./home.html">Managefy</a></div>
         <nav id="navbar">
           <a href="./register.html" id="register">Register</a>
           <a href="./login.html" id="logIn">Log In</a>
@@ -30,7 +30,7 @@
           <a href="" id="logOut">Log Out</a>
         </nav>
       </div>
-      <div class="search-content">
+      <div id="searchHero" class="search-content">
         <form action="">
           <div class="all-about-search">
             <div class="text-search">
@@ -50,7 +50,7 @@
       </div>
       <div class="table-content">
         <table id="tableContent">
-          <thead>
+          <thead id="tableHead">
             <th>Shift Name</th>
             <th>Date</th>
             <th>Start Time</th>
@@ -62,42 +62,52 @@
           </thead>
           <tbody id="tableBody"></tbody>
         </table>
-        <div id="mostProfit"></div>
-        <div class="footer-container">
-          <footer class="footer">
-            <div class="logo-text">
-              <p class="managefy"><a href="#">Managefy</a></p>
-              <p class="copyright">&copy;copyright 2022 managefy</p>
+        <div id="buttonToShow">
+          <div class="content">
+            <img src="./img/undraw_not_found_-60-pq.svg" alt="" />
+            <div class="text-no-info">
+              <p>No shifts added yet</p>
+              <p>You need to add at least one shift</p>
             </div>
-            <div class="social-media-links">
-              <div class="links">
-                <p class="title">Quick Links</p>
-                <a href="./add_shifts.html">Add shift</a>
-                <a href="./profile.html">Edit profile</a>
-              </div>
-              <div class="social-media">
-                <div class="social-media-title">
-                  <p>Social Media</p>
-                </div>
-                <div class="social-media-icons">
-                  <a href="https://instagram.com" target="_blank"
-                    ><i class="fa-brands fa-instagram fa-2xl"></i
-                  ></a>
-                  <a href="https://facebook.com" target="_blank"
-                    ><i class="fa-brands fa-facebook fa-2xl"></i
-                  ></a>
-                  <a href="https://twitter.com" target="_blank"
-                    ><i class="fa-brands fa-twitter fa-2xl"></i
-                  ></a>
-                  <a href="https://linkedin.com" target="_blank"
-                    ><i class="fa-brands fa-linkedin fa-2xl"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </footer>
+            <button id="buttonClick" class="pink btn">Create shift</button>
+          </div>
         </div>
+        <div id="notFound">
+          <div class="content">
+            <img src="./img/undraw_not_found_-60-pq.svg" alt="" />
+            <div class="text-no-info">
+              <p>No shifts found</p>
+            </div>
+          </div>
+        </div>
+        <div id="mostProfit"></div>
       </div>
+      <footer class="footer-container">
+        <div class="logo-container">
+          <a href="#" class="logo-text">Managefy</a>
+        </div>
+        <div class="social-media-icons">
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram fa-2xl"></i
+          ></a>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook fa-2xl"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+        </div>
+        <div class="links">
+          <p class="title">Quick Links</p>
+          <div class="add-edit">
+            <a href="./add_shifts.html">Add shift</a>
+            <a href="./profile.html">Edit profile</a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

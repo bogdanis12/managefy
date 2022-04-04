@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./add_shifts.js" defer></script>
+    <script src="./add_shifts.js" type="module" defer></script>
     <script
       src="https://kit.fontawesome.com/9a681edd83.js"
       crossorigin="anonymous"
@@ -16,6 +16,7 @@
   </head>
   <body>
     <div class="nav-container">
+      <div class="company-name"><a href="./home.html">Managefy</a></div>
       <nav id="navbar">
         <a href="./register.html" id="register">Register</a>
         <a href="./login.html" id="logIn">Log In</a>
@@ -50,37 +51,29 @@
           <div id="showError"></div>
         </form>
       </div>
-    </div>
-    <div class="footer-container">
-      <footer class="footer">
-        <div class="logo-text">
-          <p class="managefy"><a href="#">Managefy</a></p>
-          <p class="copyright">&copy;copyright 2022 managefy</p>
+      <footer class="footer-container">
+        <div class="logo-container">
+          <a href="./home.html" class="logo-text">Managefy</a>
         </div>
-        <div class="social-media-links">
-          <div class="links">
-            <p class="title">Quick Links</p>
+        <div class="social-media-icons">
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram fa-2xl"></i
+          ></a>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook fa-2xl"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+        </div>
+        <div class="links">
+          <p class="title">Quick Links</p>
+          <div class="add-edit">
             <a href="./add_shifts.html">Add shift</a>
             <a href="./profile.html">Edit profile</a>
-          </div>
-          <div class="social-media">
-            <div class="social-media-title">
-              <p>Social Media</p>
-            </div>
-            <div class="social-media-icons">
-              <a href="https://instagram.com" target="_blank"
-                ><i class="fa-brands fa-instagram fa-2xl"></i
-              ></a>
-              <a href="https://facebook.com" target="_blank"
-                ><i class="fa-brands fa-facebook fa-2xl"></i
-              ></a>
-              <a href="https://twitter.com" target="_blank"
-                ><i class="fa-brands fa-twitter fa-2xl"></i
-              ></a>
-              <a href="https://linkedin.com" target="_blank"
-                ><i class="fa-brands fa-linkedin fa-2xl"></i
-              ></a>
-            </div>
           </div>
         </div>
       </footer>
