@@ -46,6 +46,7 @@
   border: none;
   border-radius: 0.2rem;
 }
+
 input[placeholder] {
   padding-left: 1rem;
 }
@@ -59,6 +60,7 @@ input[placeholder] {
   width: 120px;
   border-radius: 0.2rem;
   transition: all 1s;
+  margin-top: 1rem;
 }
 #saveBtn:hover {
   transition: all 1s;

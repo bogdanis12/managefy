@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;400;600&display=swap");
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,13 +8,21 @@
 body {
   overflow-x: hidden;
 }
+.footer-contaier {
+  width: 100vw;
+  display: flex;
+}
+.form-container-hero {
+  width: 100vw;
+  display: flex;
+}
 .footer-container {
   margin-top: 10rem;
   width: 100vw;
   background: #22afff;
   padding-left: 5%;
   display: flex;
-  min-height: 20vh;
+  height: 15vh;
 }
 .footer {
   width: 100%;
@@ -100,4 +108,76 @@ body {
 .social-media-icons > a:hover {
   transition: all 0.5s;
   color: rgba(255, 255, 255, 0.568);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.footer-container {
+  margin-top: 1rem;
+  width: 100%;
+  height: 5vh;
+  background: #22afff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo-container > p {
+  width: 33%;
+  height: 100%;
+}
+.social-media-icons > a {
+  width: 33%;
+  height: 100%;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+.social-media-icons > a:hover {
+  transition: all 0.5s;
+  color: rgba(255, 255, 255, 0.568);
+}
+.social-media-icons {
+  width: 25%;
+  display: flex;
+  text-align: center;
+}
+.logo-text {
+  font-family: "Pacifico", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.add-edit {
+  display: flex;
+  gap: 10px;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.links a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255);
 }
