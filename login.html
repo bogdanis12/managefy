@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./login.js" defer></script>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="background">
+        <img src="./img/undraw_online_collaboration_re_bkpm.svg" alt="" />
+      </div>
+      <div class="form-container-hero">
+        <div class="form-container">
+          <div class="company-logo"><h1>Managefy</h1></div>
+          <div class="welcome">
+            <h2>Welcome Back!</h2>
+          </div>
+          <div class="additional-description">
+            <p>
+              To keep connected kindly enter the login details in the below
+              fields
+            </p>
+          </div>
+          <form action="">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="usernameLogIn"
+              placeholder="username"
+              required
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="passwordLogIn"
+              placeholder="password"
+              required
+            />
+            <div class="buttons-container">
+              <button id="logInBtn">Log In</button>
+              <button id="registerBtn">Register</button>
+            </div>
+            <button id="resetPassword">Forgot password?</button>
+            <div id="errorMessage"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

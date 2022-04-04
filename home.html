@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./home.js" defer></script>
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9a681edd83.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nav-container">
+        <div class="company-name"><p>Managefy</p></div>
+        <nav id="navbar">
+          <a href="./register.html" id="register">Register</a>
+          <a href="./login.html" id="logIn">Log In</a>
+          <a href="./home.html">HOME</a>
+          <a href="./add_shifts.html" id="addShift">Add shift</a>
+          <a href="" id="logOut">Log Out</a>
+        </nav>
+      </div>
+      <div class="search-content">
+        <form action="">
+          <div class="all-about-search">
+            <div class="text-search">
+              <input type="text" id="search" placeholder="Search shifts" />
+            </div>
+            <div class="search-date">
+              <input type="date" id="startSearch" />
+              <div class="end-and-search">
+                <input type="date" id="endSearch" />
+                <button id="searchDate">
+                  <i class="material-icons">search</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="table-content">
+        <table id="tableContent">
+          <thead>
+            <th>Shift Name</th>
+            <th>Date</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Comments</th>
+            <th>Hourly wage</th>
+            <th>Workplace</th>
+            <th>Profit per shift</th>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+        <div id="mostProfit"></div>
+        <div class="footer-container">
+          <footer class="footer">
+            <div class="logo-text">
+              <p class="managefy"><a href="#">Managefy</a></p>
+              <p class="copyright">&copy;copyright 2022 managefy</p>
+            </div>
+            <div class="social-media-links">
+              <div class="links">
+                <p class="title">Quick Links</p>
+                <a href="./add_shifts.html">Add shift</a>
+                <a href="./profile.html">Edit profile</a>
+              </div>
+              <div class="social-media">
+                <div class="social-media-title">
+                  <p>Social Media</p>
+                </div>
+                <div class="social-media-icons">
+                  <a href="https://instagram.com" target="_blank"
+                    ><i class="fa-brands fa-instagram fa-2xl"></i
+                  ></a>
+                  <a href="https://facebook.com" target="_blank"
+                    ><i class="fa-brands fa-facebook fa-2xl"></i
+                  ></a>
+                  <a href="https://twitter.com" target="_blank"
+                    ><i class="fa-brands fa-twitter fa-2xl"></i
+                  ></a>
+                  <a href="https://linkedin.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin fa-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

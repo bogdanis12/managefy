@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./edit_shifts.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/9a681edd83.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./add_shifts.css" />
+    <link rel="stylesheet" href="./footer.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav id="navbar">
+        <a href="./register.html" id="register">Register</a>
+        <a href="./login.html" id="logIn">Log In</a>
+        <a href="./home.html">HOME</a>
+        <a href="./add_shifts.html" id="addShift">Add shift</a>
+        <a href="" id="logOut">Log Out</a>
+      </nav>
+    </div>
+    <div class="last-content">
+      <div class="form-container">
+        <form action="">
+          <div class="edit-shift"><h1>Edit your shift</h1></div>
+          <label for="date">Date</label>
+          <input type="date" id="date" />
+          <label for="start">Start time</label>
+          <input type="time" id="startTime" />
+          <label for="end">End time</label>
+          <input type="time" id="endTime" />
+          <label for="wage">Hourly wage</label>
+          <input type="number" id="hourlyWage" />
+          <label for="workplace">Workplace</label>
+          <select name="workplace" id="workplace">
+            <option value="none"></option>
+            <option value="home">Home</option>
+            <option value="office">Office</option>
+          </select>
+          <label for="name">Shift name</label>
+          <input type="text" id="shiftName" />
+          <label for="comments">Comments</label>
+          <textarea name="" id="comments" cols="30" rows="10"></textarea>
+          <div class="buttons">
+            <button id="saveBtn">Save</button>
+            <button id="cancelBtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-container">
+      <footer class="footer">
+        <div class="logo-text">
+          <p class="managefy"><a href="#">Managefy</a></p>
+          <p class="copyright">&copy;copyright 2022 managefy</p>
+        </div>
+        <div class="social-media-links">
+          <div class="links">
+            <p class="title">Quick Links</p>
+            <a href="./add_shifts.html">Add shift</a>
+            <a href="./profile.html">Edit profile</a>
+          </div>
+          <div class="social-media">
+            <div class="social-media-title">
+              <p>Social Media</p>
+            </div>
+            <div class="social-media-icons">
+              <a href="https://instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram fa-2xl"></i
+              ></a>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook fa-2xl"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter fa-2xl"></i
+              ></a>
+              <a href="https://linkedin.com" target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

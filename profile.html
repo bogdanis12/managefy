@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./profile.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/9a681edd83.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./profile.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./footer.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nav-container">
+        <nav id="navbar">
+          <a href="./register.html" id="register">Register</a>
+          <a href="./login.html" id="logIn">Log In</a>
+          <a href="./home.html">HOME</a>
+          <a href="./add_shifts.html" id="addShift">Add shift</a>
+          <a href="" id="logOut">Log Out</a>
+        </nav>
+      </div>
+      <div class="form-container-hero">
+        <div class="form-container">
+          <div class="getting-started"><h1>Edit Profile</h1></div>
+          <div class="additional-description">
+            Please fill in the form to edit your profile
+          </div>
+          <form action="">
+            <label for="username">Username (6 characters minimum)</label>
+            <input
+              type="text"
+              placeholder="username"
+              id="username"
+              minlength="6"
+              readonly
+            />
+            <label for="email">Email</label>
+            <input type="email" placeholder="email" id="email" readonly />
+            <label for="password">Password (6 characters minimum)</label>
+            <input
+              type="password"
+              placeholder="password"
+              id="password"
+              minlength="6"
+              required
+            />
+            <label for="firstname">First Name</label>
+            <input
+              type="text"
+              placeholder="First Name"
+              id="firstName"
+              required
+              minlength="2"
+            />
+            <label for="lastname">Last Name</label>
+            <input
+              type="text"
+              placeholder="Last Name"
+              id="secondName"
+              minlength="2"
+              required
+            />
+            <label for="age">Age<sup>*18 minimum</sup></label>
+            <input type="number" placeholder="age" id="age" required />
+            <div class="buttons-container">
+              <button type="submit" id="editBtn">Edit</button>
+              <button type="submit" id="cancelBtn">Cancel</button>
+            </div>
+            <div id="showError"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <footer class="footer">
+        <div class="logo-text">
+          <p class="managefy"><a href="#">Managefy</a></p>
+          <p class="copyright">&copy;copyright 2022 managefy</p>
+        </div>
+        <div class="social-media-links">
+          <div class="links">
+            <p class="title">Quick Links</p>
+            <a href="./add_shifts.html">Add shift</a>
+            <a href="./profile.html">Edit profile</a>
+          </div>
+          <div class="social-media">
+            <div class="social-media-title">
+              <p>Social Media</p>
+            </div>
+            <div class="social-media-icons">
+              <a href="https://instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram fa-2xl"></i
+              ></a>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook fa-2xl"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter fa-2xl"></i
+              ></a>
+              <a href="https://linkedin.com" target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

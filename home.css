@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.table-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tableContent {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.2rem;
+  min-width: 400px;
+  width: 85vw;
+  height: 30vh;
+  border-radius: 1rem 2rem 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#tableContent thead tr {
+  background-color: #22afff;
+  color: white;
+
+  font-weight: bold;
+  height: 50px;
+}
+#tableContent th,
+#tableContent td {
+  padding: 12px 15px;
+  color: #333;
+}
+#tableContent th {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+#tableContent tbody tr {
+  border-bottom: 1px solid rgb(170, 170, 170);
+  cursor: pointer;
+}
+/* #tableContent tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+} */
+/* #tableContent tbody tr:nth-of-type(even):hover {
+  background-color: white;
+} */
+#tableContent tbody tr {
+  height: 100px;
+}
+#tableContent tbody tr:hover {
+  background-color: #f3f3f3;
+}
+#tableContent tbody tr:last-of-type {
+  border-bottom: 2px solid #22afff;
+}
+
+.search-content {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+}
+input[type="text"],
+input[type="date"] {
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #22afff;
+  border-radius: 5px 0 0 5px;
+  background: #f9fdff;
+  transition: background 0.25s, box-shadow 0.25s;
+}
+input[type="text"],
+input[type="date"] :focus {
+  background: white;
+  box-shadow: 0 0 2px #1b8ed1;
+}
+
+input[type="date"]:nth-child(2n + 1) {
+  border-right: none;
+}
+#endSearch input[type="date"]:nth-child(2n) {
+  border-left: none;
+}
+
+input[type="text"]::placeholder {
+  color: #1b8ed1;
+}
+input[type="text"] {
+  color: rgb(95, 95, 95);
+}
+.end-and-search {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.search-date {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.text-search {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#searchDate {
+  width: 40px;
+  height: 50px;
+  background: #22afff;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+#searchDate:active {
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+}
+.all-about-search {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+#mostProfit {
+  min-width: 300px;
+  width: 50%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: #22afff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.company-name > p {
+  font-family: "Pacifico", cursive;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.visible {
+  visibility: hidden;
+}
